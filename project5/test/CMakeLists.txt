@@ -1,0 +1,17 @@
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+aux_source_directory(src SOURCES)
+add_executable(tester ${SOURCES})
+target_link_libraries(tester PRIVATE RawMat)
+target_include_directories(tester PRIVATE include)
+function(test_adder Name args)
+    add_test(NAME ${Name} COMMAND $<TARGET_FILE:tester> ${args} WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
+endfunction()
+
+test_adder(generate_test 0)
+test_adder(copy_test 1)
+test_adder(memory_safety_test 2)
+test_adder(subMat_operator_test 3)
+test_adder(split_channel_test 4)
+test_adder(iterator_test 5)
+test_adder(other_test 6)
+

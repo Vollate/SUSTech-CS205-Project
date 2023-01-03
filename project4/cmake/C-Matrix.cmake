@@ -1,0 +1,5 @@
+set(lib_name "C-Matrix")
+set(version "0.1.1")
+include_directories(${CMAKE_INSTALL_INCLUDEDIR}/${lib_name}-${version}/${CMAKE_BUILD_TYPE})
+# get_filename_component(current_dir ${CMAKE_CURRENT_LIST_FILE} PATH)
+# install(EXPORT ${lib_name} DESTINATION ${current_dir}/${CMAKE_BUILD_TYPE})
