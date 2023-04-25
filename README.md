@@ -33,3 +33,7 @@ Score: 91
 [C++ Matrix Lib](https://github.com/uint44t/CS205/tree/master/project5)
 
 Score: 90
+
+## 课程评价
+
+Project占60%在计系算好的了，但是学C++靠这一节课远远不够(而且新标准基本没提)，建议自己看书；以及南科大报告系名不虚传。
